@@ -1,0 +1,80 @@
+html{
+  font-size: 18px;
+  font-family: helvetica;
+}
+/*Glasses Banner*/
+.cover{
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  width: 100%;
+  height: 31rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+/*Container rules*/
+.container{
+  width: 960px;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+/*Navigation bar*/
+.banner{
+  display: block;
+  background-color: cadetblue;
+  color: white;
+  z-index: 5;
+  flex-direction: column;
+  top: 1rem;
+  align-self: flex-start;
+
+}
+.dont-look{
+  height: 5rem;
+  align-self: flex-end;
+}
+.dont-look h2{
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  background-color: white
+}
+.main-selection .container{
+  padding-top: 3rem 0;
+  justify-content: center;
+}
+.main-selection{
+  display: flex;
+}
+
+.services{
+  display: flex;
+  top: 3rem;
+  align-items: center;
+}
+.service{
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+  margin: 0 3rem;
+  top: 3rem;
+}
+.exam .image img{
+  width: 3.5rem;
+  height: 50%;
+}
+.fittings .image img{
+  width: 5rem;
+  height: 30%;
+}
+.delivery .image img{
+
+}
