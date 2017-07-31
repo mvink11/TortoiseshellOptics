@@ -13,7 +13,6 @@ body{
   background-position: center;
   width: 100%;
   height: 30rem;
-  border: 1px solid black;
 }
 
 /*Container rules*/
@@ -21,7 +20,6 @@ body{
   max-width: 960px;
   /*Changing the margin to 0 auto; centers the container on the page*/
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 /*Navigation bar*/
@@ -97,7 +95,6 @@ body{
   align-content: center;
   text-align: center;
   align-items: center;
-  border: 2px solid black;
 }
 .service{
   display: flex;
@@ -106,8 +103,7 @@ body{
   align-items: center;
   height: 8rem;
   width: 5rem;
-  margin: 0 3rem;
-  padding-top: 3rem;
+  margin: 3rem auto;
   flex-wrap: wrap;
 }
 .exam p{
@@ -133,13 +129,11 @@ body{
 .about-us{
   margin-top: 3rem;
   margin-bottom: 5rem;
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   max-width: 960px;
 }
 .title{
-  border: 1px solid blue;
   width: 35%;
   margin-right: 5%;
   align-items: center;
@@ -157,21 +151,16 @@ body{
 }
 
 /*Footer*/
-footer{
+.footer{
   display: flex;
-  background-color: azure;
-  margin-top: 5rem;
-  padding: 4rem;
+  align-items: center;
   flex-wrap: nowrap;
+  background-color: azure;
+  padding: 4rem;
   max-width: 960px;
 }
 footer img{
   height: 1.5rem;
   margin-right: 1rem;
   display: inline-block;
-}
-.footer{
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
 }
