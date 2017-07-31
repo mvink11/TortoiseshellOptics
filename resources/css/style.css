@@ -39,8 +39,7 @@ body{
 }
 
 /*Nav bar - left side*/
-.image-head p{
-}
+
 .image-head{
   padding-left: 2rem;
   padding-top: 0.75rem;
@@ -170,4 +169,9 @@ footer img{
   height: 1.5rem;
   margin-right: 1rem;
   display: inline-block;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
 }
