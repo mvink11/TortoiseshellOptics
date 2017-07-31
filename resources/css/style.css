@@ -62,6 +62,9 @@ body{
 .navigation span{
   margin: 1rem;
 }
+.menu{
+  display: none;
+}
 
 /*Don't Just Look block*/
 .dont-look{
@@ -163,4 +166,94 @@ footer img{
   height: 1.5rem;
   margin-right: 1rem;
   display: inline-block;
+}
+
+/*Media Queries*/
+/*Media Query for Tablets*/
+@media only screen and (max-width: 959px){
+  .container{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .menu{
+    display: none;
+  }
+  .banner{
+    top: 0;
+  }
+  .dont-look{
+    margin: 5rem 2rem 0 auto;
+    justify-content: flex-end;
+    width: 25rem;
+    height: 3rem;
+  }
+  .dont-look h2{
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+  .cover{
+    height: 22rem;
+    width: auto;
+  }
+}
+
+/*Media Query for Phones*/
+@media only screen and (max-width: 469px){
+  .container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .image-head p, .footer p, .navigation, .navigation p{
+    display: none;
+  }
+  .menu{
+    margin-right: 1rem;
+    color: white;
+    display: block;
+  }
+  .menu span{
+    margin: 1rem;
+  }
+  .cover{
+    height: 17rem;
+    background-position: 20%;
+  }
+  .dont-look{
+    width: 100%;
+    margin-top: 9rem;
+  }
+  .dont-look h2{
+    padding: 1rem auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .services{
+    display: block;
+    margin: 3.77rem auto;
+    font-size: 0.77rem;
+  }
+  .fittings{
+    margin: 1.54rem auto;
+  }
+  .about-us{
+    display: block;
+    width: 100%;
+  }
+  .title{
+    width: 100%;
+    display: block;
+  }
+  .title h4{
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .title p{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  .footer{
+    justify-content: center;
+  }
 }
