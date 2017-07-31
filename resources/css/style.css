@@ -2,40 +2,79 @@ html{
   font-size: 18px;
   font-family: helvetica;
 }
+body{
+
+}
+
 /*Glasses Banner*/
 .cover{
   background-image: url("../images/glasses-bg.png");
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 31rem;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
+  height: 30rem;
   border: 1px solid black;
 }
 
 /*Container rules*/
 .container{
-  width: 960px;
-  justify-content: center;
+  max-width: 960px;
+  /*Changing the margin to 0 auto; centers the container on the page*/
+  margin: 0 auto;
   border: 1px solid red;
 }
 
 /*Navigation bar*/
+
 .banner{
-  display: block;
+  display: flex;
   background-color: cadetblue;
   color: white;
-  z-index: 5;
-  flex-direction: column;
+  align-items: center;
+  height: 3rem;
   top: 1rem;
-  align-self: flex-start;
-
+  position: relative;
+  justify-content: space-between;
+  font-size: 1rem;
 }
+
+/*Nav bar - left side*/
+.image-head p{
+}
+.image-head{
+  padding-left: 2rem;
+  padding-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.image-head img{
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  padding-bottom: 0.75rem;
+}
+.image-head p{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+/*Nav bar- right side*/
+.navigation{
+  margin-right: 1rem;
+}
+.navigation span{
+  margin: 1rem;
+}
+
+/*Don't Just Look block*/
 .dont-look{
   height: 5rem;
-  align-self: flex-end;
+  background-color: white;
+  width: 34rem;
+  /*Margin top right bottom left;
+  The negative value for right margin is what takes it over the container edge*/
+  margin: 10rem -2rem 0 auto;
+  justify-content: flex-end;
 }
 .dont-look h2{
   color: black;
@@ -43,11 +82,12 @@ html{
   font-size: 2rem;
   line-height: 1.2;
   padding: 1.5rem 5rem;
-  background-color: white
 }
+
+/*Main container section*/
 .main-selection .container{
-  padding-top: 3rem 0;
-  justify-content: center;
+  margin-top: 3rem 0;
+  align-self: center;
 }
 .main-selection{
   display: flex;
@@ -55,26 +95,79 @@ html{
 
 .services{
   display: flex;
-  top: 3rem;
+  align-content: center;
+  text-align: center;
   align-items: center;
+  border: 2px solid black;
 }
 .service{
-  display: inline-block;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 8rem;
+  width: 5rem;
   margin: 0 3rem;
-  top: 3rem;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+}
+.exam p{
+  margin-top: 0.5rem;
+}
+.fittings p{
+  margin-top: 1.75rem;
+}
+.delivery p{
+  margin-top: 1.5rem;
 }
 .exam .image img{
   width: 3.5rem;
-  height: 50%;
 }
 .fittings .image img{
   width: 5rem;
-  height: 30%;
 }
 .delivery .image img{
+  width: 5rem;
+}
 
+/*About US: Philosophy & Appointments*/
+.about-us{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+}
+.title{
+  border: 1px solid blue;
+  width: 35%;
+  margin-right: 5%;
+  align-items: center;
+}
+.title h4{
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 10rem;
+  color: white;
+}
+.title p{
+  margin-top: 1rem;
+}
+
+/*Footer*/
+footer{
+  display: flex;
+  background-color: azure;
+  margin-top: 5rem;
+  padding: 4rem;
+  flex-wrap: nowrap;
+  max-width: 960px;
+}
+footer img{
+  height: 1.5rem;
+  margin-right: 1rem;
+  display: inline-block;
 }
